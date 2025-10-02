@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Vision Grid</div>
+        <div class="nav-links">
+            <button onclick="scrollToSection('home')" class="nav-btn">Home</button>
+            <button onclick="scrollToSection('about')" class="nav-btn">About Us</button>
+            <button onclick="scrollToSection('why-us')" class="nav-btn">Why Choose Us</button>
+            <button onclick="scrollToSection('services')" class="nav-btn">Services</button>
+            <button onclick="scrollToSection('contact')" class="nav-btn">Contact</button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="hero">
+            <h1>Welcome to Vision Grid</h1>
+            <p>Transforming Ideas into Digital Reality</p>
+            <div class="cta-buttons">
+                <button onclick="scrollToSection('about')" class="cta-btn">Learn More</button>
+                <button onclick="scrollToSection('contact')" class="cta-btn">Get in Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>About Us</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Vision Grid is a forward-thinking company dedicated to delivering innovative solutions that drive business success. With our expertise and commitment to excellence, we help organizations achieve their digital transformation goals.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="section">
+        <div class="content">
+            <h2>Why Choose Us</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge solutions that keep you ahead of the competition</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Team</h3>
+                    <p>Dedicated professionals with years of industry experience</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Reliability</h3>
+                    <p>Consistent delivery of high-quality results on time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="content">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Solutions</h3>
+                    <p>Native and cross-platform mobile apps</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Services</h3>
+                    <p>Scalable cloud infrastructure and solutions</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Digital Strategy</h3>
+                    <p>Strategic planning and consulting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <div class="contact-buttons">
+                <button onclick="sendEmail()" class="contact-btn email-btn">
+                    <i class="fas fa-envelope"></i>
+                    Send Email
+                </button>
+                <button onclick="makeCall()" class="contact-btn phone-btn">
+                    <i class="fas fa-phone"></i>
+                    Call Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
