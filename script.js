@@ -29,7 +29,7 @@ links.forEach(link => {
 
 // Contact buttons functionality
 function sendEmail() {
-    window.location.href = 'mailto:misiaswilson2110@gmail.com';
+    window.location.href = 'mailto:visiongridmedia@yahoo.com';
 }
 
 function makeCall() {
